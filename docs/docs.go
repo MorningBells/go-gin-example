@@ -533,7 +533,7 @@ var doc = `{
             }
         },
         "/auth": {
-            "get": {
+            "post": {
                 "produces": [
                     "application/json"
                 ],

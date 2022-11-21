@@ -1,10 +1,10 @@
 package jwt
 
 import (
-	"net/http"
-
+	"fmt"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
+	"net/http"
 
 	"github.com/EDDYCJY/go-gin-example/pkg/e"
 	"github.com/EDDYCJY/go-gin-example/pkg/util"
@@ -18,6 +18,7 @@ func JWT() gin.HandlerFunc {
 
 		code = e.SUCCESS
 		token := c.Query("token")
+		fmt.Printf("获取到的token为:%s \n", token)
 		if token == "" {
 			code = e.INVALID_PARAMS
 		} else {

@@ -1,6 +1,7 @@
 package api
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/astaxie/beego/validation"
@@ -30,7 +31,8 @@ func GetAuth(c *gin.Context) {
 
 	username := c.PostForm("username")
 	password := c.PostForm("password")
-
+	fmt.Printf("用户名为:%s \n", username)
+	fmt.Printf("密码为:%s \n", password)
 	a := auth{Username: username, Password: password}
 	ok, _ := valid.Valid(&a)
 
