@@ -11,8 +11,8 @@ ADD go.sum .
 #  将Go模块安装到定义的目录中
 RUN go mod download
 ADD . .
-# 声明服务运行在8000端口
-EXPOSE 8000
+# 声明服务运行在8010端口
+EXPOSE 8010
 # 指定维护者的名字
 MAINTAINER wangyi
 
