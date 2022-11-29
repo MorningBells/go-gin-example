@@ -6,8 +6,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 
-	"github.com/EDDYCJY/go-gin-example/pkg/e"
-	"github.com/EDDYCJY/go-gin-example/pkg/util"
+	"gin-example/pkg/e"
+	"gin-example/pkg/util"
 )
 
 // JWT is jwt middleware
