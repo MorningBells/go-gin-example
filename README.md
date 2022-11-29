@@ -87,3 +87,9 @@ Swagger doc
 - App configurable
 - Cron
 - Redis
+
+
+### 生成go.mod
+go mod init gin-example
+### 依赖管理
+go mod tidy

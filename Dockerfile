@@ -2,7 +2,7 @@
 # 基础映像
 FROM golang:latest as build
 ENV GO111MODULE on
-ENV GOPROXY https://goproxy.cn,direct
+#ENV GOPROXY https://goproxy.cn,direct
 # 指示 Docker 使用此目录作为所有后续命令的默认目标。这样我们就不必输入完整的文件路径，而是可以使用基于该目录的相对路径。
 WORKDIR /go/release
 # 安装编译它所必需的模块前，需要将 go.mod和go.sum文件复制到其中。ADD或者COPY
